@@ -6,6 +6,6 @@ spec:
   containers:
   - name: test-go-http-pod
     image: hank997/go-helloworld:v1
-  ports:
-  - containerPort: 9090
+    ports:
+    - containerPort: 9090
 
