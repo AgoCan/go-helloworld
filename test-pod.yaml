@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: test-go-http-pod
+spec:
+  containers:
+  - name: test-go-http-pod
+    image: hank997/go-helloworld:v1
+  ports:
+  - containerPort: 9090
+

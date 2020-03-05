@@ -1,0 +1,16 @@
+appVersion: v1
+kind: Service
+metadata:
+  name: test-go-http-service
+  labels:
+    name: go
+spec:
+  ports:
+  - port: 9090
+    protocol: TCP
+    targetPort: 9090
+    name: go-http
+    nodePort: 31221
+  type: NodePort
+  selector:
+    name: test-go-http-pod
