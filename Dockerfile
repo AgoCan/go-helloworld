@@ -17,8 +17,3 @@ RUN apk update && \
 COPY --from=builder /app/helloworld /helloworld
 
 CMD ["/helloworld"]
-```
-
-```
-docker build -t hank997/go-helloworld:v1 .
-docker run -it --rm -p 9090:9090 hank997/go-helloworld:v1
